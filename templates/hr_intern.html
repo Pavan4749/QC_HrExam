@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR-Intern Exam</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/hr_intern.css')}}">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            <h2>QUALITY CARRIERS</h2>
+        </div>
+        <div class="right-header">
+            <div class="right-text">
+                <p>Total Questions : 30</p>
+                <p>Total Time : 30:00</p>
+            </div>
+            <div class="right-icon"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-container">
+            <h2>Please read the following instructions carefully</h2>
+            <h3><u>General instructions:</u></h3>
+            <ul>
+                <li>The test includes MCQ,short answers,and descriptive questions (as applicable).Read the each question carefully before answering.</li>
+                <li>The test will be available for [X minutes/hour] Once started,tye timer will not stop.</li>
+                <li>Any Suspicious activity  or rule violation will lead to disqualification.</li>
+            </ul>
+            <h3><u>Navigation to a question:</u></h3>
+            <ul>
+                <li>Use the Next and previous buttons at the bottom of the screen to move between questions.</li>
+                <li>Attempted questions will be shown in green,unattempted in gray,and marked-for-review in purple (or as per the legend shown).</li>
+            </ul>
+
+            <div class="radio">
+                <div class="radio-text">
+                    <span class="circle answered"></span>
+                    <p>Answered</p>
+                </div>
+                <div class="radio-text">
+                    <span class="circle not-visited"></span>
+                    <p>Not Visited</p>
+                </div>
+                <div class="radio-text">
+                    <span class="circle unanswered"></span>
+                    <p>Un Answered</p>
+                </div>
+                <div class="radio-text">
+                    <span class="circle visited"></span>
+                    <p>Visited</p>
+                </div>
+            </div>
+
+            <div class="checkboxes">
+                <label><input type="checkbox"> I accept the payment conditions</label>
+                <label><input type="checkbox"> I accept the terms and conditions</label>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <h3>HR Intern Exam</h3>
+            <p>Exam ID : 123 456 7890</p>
+            <div class="intern-form">
+                <h3>FILL DETAILS</h3>
+                <input type="text" placeholder="Enter name"/>
+                <input type="email" placeholder="Enter your Email"/>
+                <input type="tel" placeholder="Enter your Phone no"/>
+                <button class="start-btn">START TEST</button>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>

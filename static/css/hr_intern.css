@@ -1,0 +1,260 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(#0A2035,#1F3E5B);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 106px;
+    color: white;
+}
+
+.right-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.right-text p{
+    margin: 4px 0;
+    font-size: 13px;
+}
+
+.right-icon{
+    border-radius: 50%;
+    padding: 12px;
+    background-color: #212c39;
+}
+.right-icon i{
+    font-size: 30px;
+    color: #f6f6f6;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    min-height: calc(100vh - 106px);
+}
+
+.left-container{
+    margin: 30px auto;
+    flex: 2;
+    padding: 40px;
+}
+
+.left-container h2{
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.left-container h3{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.left-container ul{
+    margin: 10px 0 20px 20px;
+}
+
+.left-container ul li{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.radio{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+.radio-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-text p{ 
+    font-weight: 400;
+    font-size: 18px;
+    color: #8b8b8b;
+    margin: 0;
+} 
+
+.circle{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.answered{
+    background-image: linear-gradient(#9BFF4F,#C2FF94);
+}
+
+.not-visited{
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+}
+
+.unanswered{
+    background-image: linear-gradient(#ff5050,#993030);
+}
+
+.visited{
+    background-image: linear-gradient(#2b0064,#7928e3);
+}
+
+.checkboxes{
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+    font-size: 12px;
+    justify-content: center;
+    font-weight: 400;
+    font-style: italic;
+    color: #8b8b8b;
+}
+
+.checkboxes input{
+   margin-right: 8px;
+   accent-color: #1f3e5b;
+}
+
+
+.right-container{
+    flex: 1;
+    background: #ffffff;
+    box-shadow: 0 0 5px #000000;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 190px;
+}
+
+.right-container h3{
+    color: #0A2035;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.right-container p{
+    color: #0A2035;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.intern-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.intern-form h3{
+    color: #0A2035;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.intern-form input{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #757575;
+    border-radius: 31px;
+    font-size: 14px;
+    width: 350px;
+    height: 45px;
+}
+
+.intern-form input::placeholder{
+    color: #d8d8d8;
+}
+
+.intern-form .start-btn{
+    background-color: white;
+    color: #1F3E5B;
+    border: 1px solid #0A2035;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 230px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 370px;
+    height: 49px;
+}
+
+.start-btn:hover{
+    background-color: #1F3E5B;
+    color: #ffffff;
+}
+
+/* ===== Responsive Section ===== */
+
+@media (max-width : 1024px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-container,
+    .right-container{
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    .radio{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .intern-form input,
+    .intern-form .start-btn{
+        width: 100%;
+    }
+}
+
+@media (max-width : 600px) {
+    .radio{
+        grid-template-columns: 1fr;
+    }
+
+    .header{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .right-header{
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .checkboxes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intern-form input,
+    .intern-form .start-btn{
+        width: 100%;
+    }
+}
